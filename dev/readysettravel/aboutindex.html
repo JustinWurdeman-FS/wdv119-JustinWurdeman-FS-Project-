@@ -1,0 +1,345 @@
+<!--ABOUT PAGE /Done Validation Good/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Ready Set Travel</title>
+    <style>
+      /* ====Color Variables=== */
+      :root {
+        /* Primary */
+        --color-primary1: #687c98;
+        --color-primary2: #ee8a5a;
+        /* Secondary */
+        --color-secondary1: #a8c7dc;
+        --color-secondary2: #0b0c25;
+        --color-secondary3: #e7ecf3;
+        /* Background */
+        --color-background1: #e7ecf3;
+        --color-background2: #a8c7dc;
+        /* Text Colors */
+        --color-text1: #222222;
+        --color-text2: #444444;
+      }
+      /* ==Typography Variables== */
+      :root {
+        /* ==Font Families== */
+        --font-abril: "Abril Fatface";
+        --font-Roboto: "Roboto";
+        /* ==Font Sizes== */
+        --font-size-h1: 48px;
+        --font-size-h2: 40px;
+        --font-size-h3: 33px;
+        --font-size-h4: 20px; /*Bold*/
+        --font-size-h5: 15px; /*Light*/
+        --font-size-nav: 1rem; /*Medium*/
+        --font-size-body: 1rem;
+
+        /* Font Weight */
+        --weight-regular: 400;
+        --weight-medium: 500;
+        --weight-bold: 700;
+        --weight-light: 300;
+      }
+      /* ====Header button==== */
+      .home-button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        font-family: var(--font-abril);
+        font-weight: var(--weight-medium);
+        color: #222222;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+      }
+      /* ====General Header=== */
+
+      header {
+        background-color: #687c98;
+        padding-top: 0.6rem;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      header {
+        background-color: #687c98;
+      }
+      header h1 {
+        text-align: center;
+      }
+      /* ====Navigation==== */
+      .head nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: auto;
+        background-color: #687c98;
+        font-family: var(--font-abril);
+      }
+
+      .head nav ul li {
+        margin: 0 5rem;
+      }
+
+      .head nav ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+      }
+
+      /* ====General layout==== */
+      html body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-Roboto);
+        font-size: var(--font-size-body);
+        background-color: var(--color-background2);
+        line-height: 1.6rem;
+        overflow-x: hidden;
+      }
+
+      /* ====Header Photo/Text==== */
+      .Agent {
+        border: 2px solid black;
+      }
+
+      .Agent {
+        width: 100%;
+        margin: 0;
+        padding-right: auto;
+        max-width: none;
+        background-color: #687c98;
+      }
+
+      .Agent .hero-image {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin: auto;
+      }
+
+      .Agent .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .Agent .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #e7ecf3;
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .Agent .hero-text h2 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      }
+
+      .Agent .hero-text p {
+        font-size: 1.5rem;
+      }
+
+      /* ====Main styling==== */
+      main {
+        padding: 2rem 1.5rem;
+        max-width: 960px;
+        margin: auto;
+      }
+
+      section {
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        color: #123b3a;
+        margin-bottom: 1rem;
+        text-align: center;
+        text-emphasis: var(--weight-bold);
+      }
+
+      article {
+        background: #fff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      article img {
+        max-width: 100%;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+      }
+
+      article h3 {
+        margin: 0.5rem 0 0.2rem;
+        color: #145c5d;
+        font-family: var(--font-abril);
+      }
+
+      /* ==== Footer styling ==== */
+      .footer-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: var(--color-primary1);
+        color: #e7ecf3;
+        padding: 1rem 2rem;
+        margin: 0;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .social-icons {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding-left: 0;
+        float: right;
+      }
+
+      .social-icons li img {
+        width: 60px;
+        height: 60px;
+      }
+
+      footer {
+        background-color: var(--color-primary1);
+        color: white;
+        padding: 1rem 2rem;
+        margin: 0;
+      }
+      .connect {
+        text-align: right;
+        padding: auto;
+      }
+
+      /* ====Responsive layout==== */
+      @media (min-width: 768px) {
+        .team {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+          justify-content: center;
+        }
+
+        .team article {
+          flex: 1 1 45%;
+          margin-bottom: 0;
+          box-shadow: 0 10px 10px var(--color-primary2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation Tool Bar-->
+    <header class="head">
+      <button class="home-button" onclick="location.href='index.html'">
+        Ready Set Travel
+      </button>
+      <nav>
+        <ul>
+          <li><a href="aboutindex.html">About</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="Tours.html">Tours</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main photo Top of the page-->
+    <section class="Agent">
+      <figure class="hero-image">
+        <img src="img/hero-bg.jpg" alt="Horizon mountains" />
+        <figcaption class="hero-text">
+          <h2>Book the trip of a lifetime</h2>
+          <p>Get the best advice and tips for you dream trip</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!--Main Section/Mission-Founder-->
+    <main>
+      <section class="Mission">
+        <h2>Our Mission</h2>
+        <p>
+          At Ready Set Travel, we believe that travel is more than a
+          destination. Its a journey of inspiration, discovery, and connection.
+          Our mission is to make travel planning simple, exciting, and
+          accessible for everyone.
+        </p>
+      </section>
+      <section class="team">
+        <h2>Meet the Team!</h2>
+        <article>
+          <img src="IMG2/Pro-Photo.jpeg" alt="Founders Portrait" />
+          <h3>Justin Wurdeman</h3>
+          <p>
+            Founder & Traveling Enthuisast<br />Justin brings 10+ years of
+            global logistics and traveling coordination experience from his time
+            in the Marines. His passion to travel has brought joy to many of his
+            adventurist clients.
+          </p>
+        </article>
+        <article>
+          <img src="IMG2/You-should-be-here.jpg" alt="travlers group" />
+          <h3>Our Mission</h3>
+          <p>
+            At Ready Set Travel, our mission is to inspire and empower every
+            traveler to explore the world with confidence and excitement. We
+            believe traveling is more than just visiting new places but to
+            create unforgettable memories! Through curated tours, expert
+            guidance, we strive to make your trip planning seamlingless and
+            relaxing.
+          </p>
+        </article>
+        <article>
+          <img src="IMG2/star.jpg" alt="reviews" />
+          <h3>What our customers are saying</h3>
+          <p>
+            Ready Set Travel made planning my trip so easy and relaxing! The
+            site is super clean and easy to use. I felt confident booking after
+            seeing the experience their team had to offer. 10/10 I would
+            recommend!
+          </p>
+        </article>
+      </section>
+    </main>
+    <!--Footer From Main Page-->
+    <footer class="footer-bar">
+      <section class="Social">
+        <!--Address-->
+        <address>
+          <p>
+            Location & Email 1234 Address Street<br />
+            Winter Park, Fl 32792<br />
+            contact@readysettravel.com
+          </p>
+        </address>
+        <h2 class="connect">Connect With Us</h2>
+        <ul class="social-icons">
+          <li>
+            <img src="IMG2/social-facebook.png" alt="facebook icon" />
+          </li>
+          <li><img src="IMG2/social-instagram.png" alt="instagram icon" /></li>
+          <li><img src="IMG2/social-twitter.png" alt="twitter icon" /></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

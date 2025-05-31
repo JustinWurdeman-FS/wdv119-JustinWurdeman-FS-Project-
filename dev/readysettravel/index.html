@@ -1,0 +1,165 @@
+<!-- INDEX MAIN PAGE/ Done Validation Good -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ready Set Travel</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+  </head>
+  <body>
+    <header class="head">
+      <button class="home-button" onclick="location.href='index.html'">Ready Set Travel</button>
+      <!--Navigation Tool Bar-->
+      <nav>
+        
+        <ul>
+          <li><a href="aboutindex.html">About</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="Tours.html">Tours</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><button>Book a Trip!</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Main photo Top of the page-->
+      <section class="Agent">
+        <figure class="hero-image">
+          <img src="img/hero-bg.jpg" alt="Horizon mountains" />
+          <figcaption class="hero-text">
+            <h2>Book the trip of a lifetime</h2>
+            <p>Get the best advice and tips for you dream trip</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="Search">
+        <h3>Where do you want to go?</h3>
+        <figure class="search-box">
+          <figcaption>
+            <form>
+              <label for="destination" class="travel">Destination</label>
+              <input
+                type="text"
+                id="destination"
+                placeholder="Enter a destination"
+              />
+              <!--Destination Search Feature-->
+              <button type="button" onclick="searchDestination()">
+                Search
+              </button>
+            </form>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="Tours">
+        <header>
+          <h3>Trending Tours</h3>
+          <p>Get out there and experience some adventure!</p>
+        </header>
+      </section>
+      <section class="tour-list">
+        <article>
+          <section>
+            <img src="img/tour-mountainHiking.jpg" alt="Mountains" />
+            <p class="caption">Alps Mountain Hiking Tours</p>
+          </section>
+          <p>4 days | 10 stops</p>
+          <p>$1,500</p>
+          <button>Book Now</button>
+        </article>
+        <article>
+          <section>
+            <img src="img/tour-snorkel.jpg" alt="snorkel" />
+            <p class="caption">Snorkel the Great Barrier Reef Tours</p>
+          </section>
+          <p>2 days | 1 Stop</p>
+          <p>$1,000</p>
+          <button>Book Now</button>
+        </article>
+        <article>
+          <section>
+            <img src="img/tour-pyramids.jpg" alt="Pyramid Tours" />
+            <p class="caption">Tour the Pyramids on Camelback</p>
+          </section>
+          <p>2 days | 2 Stop</p>
+          <p>$2,000</p>
+          <button>Book Now</button>
+        </article>
+      </section>
+      <!--Travel Services icons/guides-->
+      <section class="services">
+        <header>
+          <h3>Plan the Perfect Trip</h3>
+          <p>
+            We take care of it all so you can get out there and experience some
+            adventure!
+          </p>
+        </header>
+        <section class="service-icons">
+          <article>
+            <img src="img/icon-flights.png" alt="flights" />
+            <p>Flights</p>
+          </article>
+          <article>
+            <img src="img/icon-transport.png" alt="transportation" />
+            <p>Transportation</p>
+          </article>
+          <article>
+            <img src="img/icon-guide.png" alt="guides" />
+            <p>Guides</p>
+          </article>
+        </section>
+      </section>
+      <section class="destinations">
+        <header>
+          <h3>Top Notch Destinations</h3>
+          <p>These places are on everyones's bucket list</p>
+        </header>
+      </section>
+      <section class="destination-rows">
+        <figure>
+          <img src="img/destinations-machu.jpg" alt="Machu" />
+          <figcaption>Machu Picchu</figcaption>
+        </figure>
+        <figure>
+        <img src="img/destinations-sydney.jpg" alt="Sydney Australia" />
+        <figcaption>Sydney, Australia</figcaption>
+      </figure>
+      <figure>
+        <img src="img/destinations-paris.jpg" alt="Parris France" />
+        <figcaption>Parris, France</figcaption>
+      </figure>
+      <figure>
+        <img src="img/destinations-rome.jpg" alt="Rome Italy" />
+        <figcaption>Rome, Italy</figcaption>
+      </figure>
+        <img src="img/destinations-rio.jpg" alt="Rio" />
+        <figcaption>Rio de Janeiro, Brazil</figcaption>
+      </figure>
+      </section>
+    </main>
+       <!--Footer From Main Page-->
+       <footer class="footer-bar">
+        <section class="Social">
+          <!--Address-->
+          <address>
+            <h3>Location & Email</h3>
+            1234 Address Street<br />
+            Winter Park, Fl 32792<br />
+            contact@readysettravel.com
+          </address>
+          <h2 class="connect">Connect With Us</h2>
+          <ul class="social-icons">
+            <li>
+              <img src="IMG2/social-facebook.png" alt="facebook icon" />
+            </li>
+            <li><img src="IMG2/social-instagram.png" alt="instagram icon" /></li>
+            <li><img src="IMG2/social-twitter.png" alt="twitter icon" /></li>
+          </ul>
+      </footer>
+    </body>
+  </html>
+  </body>
+</html>
